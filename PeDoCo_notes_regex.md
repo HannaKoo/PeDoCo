@@ -10,10 +10,11 @@ Open the pdf in Word:
 - line breaks doesn't work
 - hyphens disappear - no, the hyphenation is different?!
   - direct: ~160 lines, copypaste: ~100 lines
+
 Copypaste from Adobe Reader to Word: 
 - line breaks are preserved
 - page numbers and superscripts are inserted as body text
-characters # { } $ ¤ £ \ § ½ @ % = ´ ´ ` ^ ~ * not found
+- characters # { } $ ¤ £ \ § ½ @ % = ´ ´ ` ^ ~ * not found
 < [ ] ( / | & found
 <suppl/>
 and from the editing principles we read that:
@@ -415,9 +416,9 @@ also includes 9 pt size spaces before
 
 ## 8.5.2022
 To be added based on the formatting, the rest will be done in Code?:
-<i> italics
+`<i>` italics
 headings:
-<dokumentti My_nr=”23” aucnro=”27” date=”1555-05-06” place=”Rome” canonlaw=”matrimonialibus”>
+`<dokumentti My_nr=”23” aucnro=”27” date=”1555-05-06” place=”Rome” canonlaw=”matrimonialibus”>`
 Lorem ipsum … 
 </document>
 To be added by replacement:
@@ -431,74 +432,78 @@ additions: < replaced by <addenda>? and > replaced by </addenda>.
 replaced by <, >, (/)
 <addenda></addenda>
 / removed? foil change
-& -> &amp; can be done later
+`&` -> `&amp;` can be done later
 
 Removal of slashes: removed 110 slashes in font 9.5 / and replaced with "none"
 Add italics-tags: 
-italicized; any character x -> <i>x</i>
+italicized; any character `x` -> `<i>x</i>`
 (?)
-<i>\1</i>
+`<i>\1</i>`
 11 066 replacements made.
-Next, delete </i><i>
+Next, delete `</i><i>`
 10733 replacements made.
 Heading line marking:
 Font 10 pt
 (?)
-<h2>\1</h2>
+`<h2>\1</h2>`
 And correction: 
-</h2><h2> deletion and
+`</h2><h2>` deletion and
 
-</h2><h2> delete and
-</h2> <h2> also, replace with *space*. Because 9 pt font size between headings (from removing references?)
+`</h2><h2>` delete and
+`</h2> <h2>` also, replace with *space*. Because 9 pt font size between headings (from removing references?)
 
 ## 27.8.2022
-Somewhere along the way, <s have been replaced by {s and >s by >t}'s.
+Somewhere along the way, `<`'s have been replaced by `{`'s and `>`'s by `}`'s.
 Header lines as specified above:
 7488 replacements
-7064 replacements (</h2><h2> deletion)
-</h2> <h2> not found, although document 20 seems to have one!
+7064 replacements (`</h2><h2>` deletion)
+`</h2> <h2>` not found, although document 20 seems to have one!
 The search function in the side panel finds 29, and then the replacement function part: 29 replacements. Could the font choice have been left ambiguous.
 So now the end tags of h2 are on the next line, e.g:
+```
 <h2>22 15.1 1450 Rome
 </h2>22a
-
+```
 ## 28.8.2022
 
 Replacement of special characters not allowed:
-[ ] delenda to be deleted
-/ nova codicis pagina new page of a manuscript
-< > supplenda to be added was changed to { }
-† † turbata corrupt
-+ verbum vel verba (quae the following word(s)
+- `[ ]` delenda to be deleted
+- `/` nova codicis pagina new page of a manuscript
+- `< >` supplenda to be added was changed to { }
+- `† †` turbata corrupt
+- `+` verbum vel verba (quae the following word(s)
 sequuntur) add. added (in the manuscript)
 
-discarded & character 1 ppl -> changed 1 ppl to "and"
-likewise replace those that the editor thinks should be deleted [ with the tag <del> 53 pcs
-] </del> as well as 53 pcs
+discarded `&` character 1 ppl -> changed 1 ppl to "and"
+likewise replace those that the editor thinks should be deleted `[` with the tag `<del>` 53 pcs
+`]` `</del>` as well 53 pcs
 
 
-previously replaced addenda with <> given by the editor replaced with {} versions and now replaced with {} tags <add> 83 times and </add> 83 times
+previously replaced addenda with `<>` given by the editor replaced with `{}` versions and now replaced with `{}` tags `<add>` 83 times and `</add>` 83 times
 
 and six pieces of six crosses removed, three of the beginning of the word and three of the ending of the word.
-<unclear reason="illegible">
-</unclear>
+`<unclear reason="illegible">
+</unclear>`
 
-tallennettu kaikki kerralla 4.0_tags
+Saved all at once: vers. 4.0_tags
 
-Tavuviivat:
+Hyphens:
 
 ak 89 italics tag problem
+```
 <i>litteras confes- </i>
 <i>sionales
+```
 corrected manually.
 
--\n*
-[ blank ]
-108 replaced. There were long lines.
+`-\n*`
+`[ blank ]`
+108 replaced. Resulted in some long lines.
 
+```
 <h2>130–133 3.12 1466 Rome
 </h2>
-
+```
 
  metadata <my_new_number><old_number><bundle entry info>
 Risberg numbering = 130-133
@@ -555,68 +560,86 @@ replaced the 90 pieces of #hits with those with a single-digit day and month
 
 
 ### corrected 32 of those with one digit in the date, but two in the month
-
+```
 <h2>([0-9]*) ([0-9])\.(1[0-9]) ([0-9]*)(.*)
 </h2>
-<h2 num="$1">$1 <date when="$4-$3-0$2">$2.$3 $4</date>$5</h2>
+```
+`<h2 num="$1">$1 <date when="$4-$3-0$2">$2.$3 $4</date>$5</h2>`
 
 ####170 units when there are two digits in a day and one a month
-
+```
 <h2>([0-9]*) ([1-3][0-9])\.([0-9]) ([0-9]*)(.*)
 </h2>
-<h2 num="$1">$1 <date when="$4-0$3-$2">$2.$3 $4</date>$5</h2>
+```
+`<h2 num="$1">$1 <date when="$4-0$3-$2">$2.$3 $4</date>$5</h2>`
 
 ### is replaced when there are two numbers per day and 65 per month
-
+```
 <h2>([0-9]*) ([1-3][0-9])\.(1[0-9]) ([0-9]*)(.*)
 </h2>
-<h2 num="$1">$1 <date when="$4-$3-$2">$2.$3 $4</date>$5</h2>
+```
+`<h2 num="$1">$1 <date when="$4-$3-$2">$2.$3 $4</date>$5</h2>`
 
 357 replacement made in a total of four batches, as should be found in the code above.
 Bundles:
 225-229 awkward date mess, to be done by hand -> done by hand
 
+```
 <h2>([0-9]*)-([0-9]*) ([0-9]*)\.([0-9]*) ([0-9]*)(.*)
 </h2>
-find 35 hits
+```
+finds 35 hits.
 
+```
 <h2>([0-9]*)–([0-9]*) ([0-9])\.([0-9]) ([0-9]*)(.*)
 </h2>
-<h2 num="$1" to_num="$2" buldle="y">$1–$2 <date when="$5-0$4-0$3">$3.$4 $5</date>$6</h2>
+```
+`<h2 num="$1" to_num="$2" bundle="y">$1–$2 <date when="$5-0$4-0$3">$3.$4 $5</date>$6</h2>`
 9 items
+
+```
 <h2>([0-9]*)–([0-9]*) ([0-9])\.(1[0-9]) ([0-9]*)(.*)
 </h2>
-<h2 num="$1" to_num="$2" buldle="y">$1–$2 <date when="$5-$4-0$3">$3.$4 $5</date>$6</h2>
+```
+`<h2 num="$1" to_num="$2" bundle="y">$1–$2 <date when="$5-$4-0$3">$3.$4 $5</date>$6</h2>`
 2 items
+
+```
 <h2>([0-9]*)–([0-9]*) ([1-3][0-9])\.([0-9]) ([0-9]*)(.*)
 </h2>
-<h2 num="$1" to_num="$2" buldle="y">$1–$2 <date when="$5-0$4-$3">$3.$4 $5</date>$6</h2>
+```
+`<h2 num="$1" to_num="$2" bundle="y">$1–$2 <date when="$5-0$4-$3">$3.$4 $5</date>$6</h2>`
 18 items
+
+```
 <h2>([0-9]*)–([0-9]*) ([1-3][0-9])\.(1[0-9]) ([0-9]*)(.*)
 </h2>
-<h2 num="$1" to_num="$2" buldle="y">$1–$2 <date when="$5-$4-$3">$3.$4 $5</date>$6</h2>
+```
+`<h2 num="$1" to_num="$2" bundle="y">$1–$2 <date when="$5-$4-$3">$3.$4 $5</date>$6</h2>`
 6 items
-9+2+18+6=35 good!
 
-That leaves two with the date /
-documents: 7 and 77
-77 angle brackets <Rome>
+9+2+18+6=35, very good!
+
+That leaves two documents that have a date with a `/`
+- documents: 7 and 77
+- 77 angle brackets `<Rome>`
 
 the bundle attribute is added to the first corrected ones:
-(num="[0-9]*")(>)
-$1 bundle="n"$2
+`(num="[0-9]*")(>)`
+`$1 bundle="n"$2`
 357 pcs
 
-Replaced the <> signs in the header with {}
-<h2 num="77" bundle="n">77 <date when="1458">1458/1459</date> {Rome}</h2>
+Replaced the `<` `>` signs in the header with `{` `}`
+
+`<h2 num="77" bundle="n">77 <date when="1458">1458/1459</date> {Rome}</h2>`
 
 ## 5.9.2022 hyphen problem
 
 Some of the hyphens have not been transferred at all from pdf to Word. So they are missing without leaving a trace. Missing lines are (typically?) those followed by 270v or a line number, even at the beginning of the next line?
-Adobe reader can't differentiate between hyphens and dashes in the search function, Firefox can, but for some reason it can't find all the hyphens (with good luck it finds exactly those hyphens that have been left out of Word! It's not a great situation, it's just the way they are.)
-Copypasting from Firefox, the bene-dict of document 2 is the ascii hyphen 0x2d, but Firefox can't find it.
+Adobe reader can't differentiate between hyphens and em-dashes in the search function, Firefox can, but for some reason it can't find all the hyphens (with good luck it finds exactly those hyphens that have been left out by Word! No good luck, it's random.)
+Copypasting from Firefox: the `bene-dict` of document 2 is the ascii hyphen 0x2d, but Firefox can't find it.
 Microsoft Edge finds a slightly different  hyphens than Firefox, maybe a little less?
-And even Adobe Reader doesn't find all byte lines.
+And even Adobe Reader doesn't find all hyphens.
 In Adobe Reader: 
 DOC. 16:
 Upsalensis is not found, its hyphen is found.
@@ -624,32 +647,39 @@ Ak. 17 None of these hyphens can be found in the Reader search.
 - natalium is found and colours both lines from start to finish.
 - ecclesiasticum is not found.
 - auctoritate also colours two lines.
--obtinendum colours two lines.
+- obtinendum colours two lines.
 
 ### dealing with bundle entries:
 
-need to keep Risbergs numnering and info about doc boundaries:
-<lb num=” [nro] “ >[nro]</lb>
-
-<h2 num="23" to_num="24" buldle="y">23–24 <date when="1450-02-07">7.2 1450</date> Rome</h2>
+need to keep Risbergs numbering and info about doc boundaries:
+`<lb num=” [nro] “ >[nro]</lb>`
+```
+<h2 num="23" to_num="24" bundle="y">23–24 <date when="1450-02-07">7.2 1450</date> Rome</h2>
 <edition>
 <lb num=”23“>23</lb> Similem gratiam Christoforo Olavi scholari Aboensis diocesis de
 soluto et soluta <i>genito</i>.
 <lb num=”24“>24</lb> Similem Olavo Olavi eiusdem diocesis de soluto et soluta <i>genito</i>.
 Fiat de speciali. Dominicus sancte Crucis.
 </edition>
+```
 
 ## 12.9.2022
 DOC 51 backwards; check quotation mark type
-<lb num="51"/>
+`<lb num="51"/>`
 
  bundle="y">63-68 leaves text outside the tags at the beginning and end
 
 hyphens corrected
 
-### The Thyphens, part 2: Linux
-Apparently can find all syllables, but can't distinguish between dashes.
+### The hyphens, part 2: Linux
+Evince: Apparently can find all hyphens, but can't distinguish them from em-dashes.
+
 Okular: Seems to find all the hyphens, and distinguish them from the dashes! A bit weird where it starts searching, but it's so fast that you can search from the beginning with the button down.
+
+## 26.6.2024 
+
+
+
 
 # NORWEGIAN DATA
 
@@ -733,7 +763,7 @@ Several wittnesses
 bundle="y">
 bundle="y" several_wittnesses="n">
 bundle="n">
-buldle="n" several_wittnesses="n">
+bundle="n" several_wittnesses="n">
 We have gone through the documents with version a and b. Added some useful tags. 7 documents, versions a and b.
 
 # ENGLAND AND WALES DATA
