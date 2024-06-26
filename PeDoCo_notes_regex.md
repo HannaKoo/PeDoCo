@@ -39,11 +39,12 @@ Auctoritate's documents are partly copied in bundles in the office. E.g. 225-229
 What about the hyphenation? Off?
 
 Confusing passages within the text:
-208: LunenSIS regens. - 'sis' is a capitalized font 11! just 'bigger'.
-248: pape viti super - 'ti' is a smaller font 6.5! superscript
-437b: at the end of 3o where 'o' is a smaller font 6.5! superscript
-Reply from Kirsi:
--Lunensis - it's probably just an accidental use of the wrong font. It doesn't make any difference
+- 208: LunenSIS regens. - 'sis' is a capitalized font 11! just 'bigger'.
+- 248: pape viti super - 'ti' is a smaller font 6.5! superscript
+- 437b: at the end of 3o where 'o' is a smaller font 6.5! superscript
+
+Reply from Kirsi Salonen:
+- Lunensis - it's probably just an accidental use of the wrong font. It doesn't make any difference
 - viti - when you look at the actual edition, you will notice that it is Pope Clement VI and the text has vi followed by ti as the superscript, i.e. vi-ti (= sexti).
 
 How do I take into account that almost every document has some entry in the apparatus criticus? However, I think it is quite relevant to address the work done by Sara Risberg. Surely the manual work applies to each word or phrase individually? I think relevant to know what are the typical grammatical "challenges" in the penitentiary material. And what Sara has had to edit for a "better" Latin. 
@@ -69,8 +70,8 @@ Swedish and Finnish archives hold information on six Penitentiary cases
 that are also to be found among the Penitentiary records."
 
 Type of source                                   | Number of cases
--------------------------------------------------|--------------------
-Littera ecclesiae                                |	1		
+-------------------------------------------------|  -----:
+Littera ecclesiae                                |	1
 Copy of supplication                             |	437
 Original supplication                            |	1
 Original supplication and its copy               |	1
@@ -82,7 +83,8 @@ Total                                            | 453
 
 Risberg and Salonen
 
-added #regest
+added #regest  
+
 Next time, or sometime:
 1. replace 8.5 in bold italics (i.e., the numbers between the text: bundles and a/b) with something else in single-spaced.
 2. Add regest tags
@@ -112,9 +114,10 @@ At some point each word will be auctorized in e.g. SPSS and then I think that th
  
 ## 16.8.2020 xml-experiment 
 
-Auctoritate copypaste tyko1 xmlexperiment2.docx
+Auctoritate copypaste `tyko1 xmlexperiment2.docx`  
 In the first document the following have been inserted:
 
+```xml
 <asiakirja aineisto=”Auctoritate” nro=”1” kategoria=”de uberiori” paivaus=”1410-05-28” paikka=””>
 <regesta><nimi tyyppi=”rahvaankielinen”>Laurentius Johannis</nimi> from <paikka tyyppi=”kotiseurakunta”>Stockholm</paikka>, a cleric from the diocese of Uppsala and the
 son of a priest and an unmarried woman, has earlier received dispensation from
@@ -136,14 +139,14 @@ facientes uberiorem, ut dicto non obstante ad omnes sacros ordines
 promoveri et unum aliud beneficium ecclesiasticum, etiam si curam
 habeat animarum, obtinere possit, secum dispensare dignemini per omnia 
 ut supra in proxima. Fiat de speciali ad unum aliud et quod semel.</editio>
-
+```
 Supervisor Veronika Laippala requested that the Latin words are in Conll form
 
-File: 1_on_experiment_word_list_data_experiment.xlsx
+File: `1_doc_experiment_word_list_data_experiment.xlsx`
 
 →outline of how things could be
 
-Obviously, changes to this to get a conll format table. https://universaldependencies.org/format.html
+Probably, changes to this to get a conll format table. https://universaldependencies.org/format.html
 
 
 
@@ -152,102 +155,110 @@ Obviously, changes to this to get a conll format table. https://universaldepende
 
 
 ## 12.4.2022
-All instances of font size 5 removed with content of type [0-9][0-9][0-9][0-9] deleted -anchor of historical notes
-([0-9]*)([])([0-9]*\.[0-9][][0-9]*)(^l)
-</document><document number="\1" date="\3">\1\2\3\4
+All instances of font size 5 removed with content of type `[0-9][0-9][0-9]` deleted -anchor of historical notes
+
+`([0-9]*)([])([0-9]*\.[0-9][][0-9]*)(^l)`
+
+`</document><document number="\1" date="\3">\1\2\3\4`
 
 
-To capture a line: ^13[0-9A-z .]*^13
+To capture a line: `^13[0-9A-z .]*^13`
 
-find the majority, number the right font <[0-9]*>[ ][0-9]*\.[0-9A-z]*^13
+find the majority, number the right font `<[0-9]*>[ ][0-9]*\.[0-9A-z]*^13`
 
 Replaced the headings with the following
 
-(<[0-9]*>[ ][0-9]*\.[0-9A-z]*^13)
+`(<[0-9]*>[ ][0-9]*\.[0-9A-z]*^13)`
 
-<headingline>\1</headingline>
+`<headingline>\1</headingline>`
 
 363 replaced
 
-went through all header lines and all headers starting with <headingline> and saved as version 2.1
+went through all header lines and all headers starting with `<headingline>` and saved as version 2.1
 
 ## 17.8.2021
 
-<headingline>45 12.7 1414 Bologna types still missing closing thing and endofplace and endofdate
+`<headingline>45 12.7 1414 Bologna` types still missing closing thing and endofplace and endofdate
 
-made:
-<headingline>3 4.11 1410 Bologna<endofplace>
-<headingline>1 28.5 1410<endofdate>
+made:  
+`<headingline>3 4.11 1410 Bologna<endofplace>`  
+`<headingline>1 28.5 1410<endofdate>`  
 
-added to those that have a subscript a tag
+added to those that have a footnote an `<endofplace>` tag
 
-([a-z])(^13)(\</headingline\>)
-\1<endofplace>\2\3
+`([a-z])(^13)(\</headingline\>)`  
+`\1<endofplace>\2\3`  
 
-(\</headingline\>)
-\1<startregesta>
+`(\</headingline\>)`  
+`\1<startregesta>`
 
 ## 19.8.2021
-replacement that has not yet been used
-(^13)(\<headingline\>)
-\1<endeditiontext><endofdocumententity>\2
+replacement that has not yet been used  
+`(^13)(\<headingline\>)`  
+`\1<endeditiontext><endofdocumententity>\2`  
 
 Saved in version 2.7: Added missing last page, font replaced by Arial, language changed to Latin (World)
 
-Marked the end of the editing line <"editions line end">:
-Font size 9,5
- ^13
- <editions line end>^l
+Marked the end of the editing line `<editions_line_end>`:  
+Font size 9,5  
+ `^13`  
+ `<editions_line_end>^l`  
 5,463 replacements
 
 Saved version 2.8
 
-apparatuses (also hits line numbers):
-Font size 7,5
- ^13
- <apparatus line stop>^l
-2734 replacements
-+5 manual corrections:
+apparatuses (also hits line numbers):  
+Font size 7,5  
+ `^13`  
+ `<apparatus_line_end>^l`  
+2734 replacements  
++5 manual corrections:  
 
-font-size problem related to pseudo-small caps in names Size=6 [A-Z]^13: p. 196, 260, 266, 367, 409.
+font-size problem related to pseudo-small caps in names Size=6 `[A-Z]^13`: p. 196, 260, 266, 367, 409.
+
 Nothing found with a-z.
+
 Possible other problems appear to be single unlabeled rows, most likely caused by an end-of-line superscript or subscript, i.e. perhaps a numeral.
+
 
 (The last line number 480 is not marked because it does not end the paragraph but the end of the document?)
 
 Saved version 2.9
 
 A plan to fix the line end tags:
-match ^***<final tag> : add <final tag> to the beginning
-delete <end tag> \n <start tag>
+- match `^***<end tag>` : add `<start tag>` to the beginning
+- delete `<end tag> \n <start tag>`
 
 
 1.9.2021
 
-went through number followed by r or v and put start and end suffix for all these and then saved 3.0
+went through (number followed by r or v) and put start and end tag for all these and then saved 3.0
 
 20.9.
 document 11 added foil tags
 
-Continue adding header tags here
-<headingline>225-229 14, 17, 20.12 1475 Rome<endofplace>
+Continue adding header tags here  
+`<headingline>225-229 14, 17, 20.12 1475 Rome<endofplace>`
 
 make sure that the beginning is enclosed in both tags around each numeral
 
 (0-9) font arial bold 8,5
 
-Example of unclear case: <headingline>51-53 15.7 1455<endofdate>
+Example of unclear case: 
+```xml
+<headingline>51-53 15.7 1455<endofdate>
  </headingline><startregesta>Johan Olofsson from the diocese of Turku and the son of an unmarried couple, and
 Nils "Nutasson" from the diocese of Linköping, also the son of an unmarried couple,
 and Johan Johansson from the diocese of Uppsala, the son of a priest and an unmarried
 woman, are granted simple dispensations from illegitimacy (by Cardinal
 Dominicus).
 
-Item supplicatur pro parte Iohannis Olavi de soluto et soluta geniti et <lb_folio=“6:57v”/> Nicolai Nutason de soluto et soluta geniti et Iohannis Iohannis de<editiorivinloppu>
-sacerdote et soluta geniti.<edition end line>
+Item supplicatur pro parte Iohannis Olavi de soluto et soluta geniti et <lb_folio=“6:57v”/> Nicolai Nutason de soluto et soluta geniti et Iohannis Iohannis de<editions_line_end>
+sacerdote et soluta geniti.<editions_line_end>
+```
 
-No difference is made here: <headingline>275–276 7.7 1483<endofdate>
- </headingline><startregesta>
+No difference is made here: `<headingline>275–276 7.7 1483<endofdate>
+ </headingline><startregesta>`
 
 Same entry 287-288 22.5 1485
 
@@ -255,7 +266,7 @@ Same entry 287-288 22.5 1485
 
 check 206-207
 
-1.10 reached so far, continue <headingline>385-387 2.9 1501
+1.10 reached so far, continue `<headingline>385-387 2.9 1501`
 
 
 ## 05.01.2022 
@@ -310,16 +321,17 @@ In document 437 there is a folio marking 455r without tags
 
 Line numbers: Arial - Normal - 6pt hits only the line numbers, italics will include also other things.
 
-Ac 46: 5 after the last line?!
-ak 92 5 in the middle of the line "5m cum cura..."
-ak 112 15 --,,-- "... u 15t in forma..."
-ak 232 20 --,,-- "Prefatus 20 igitur "
-ak 234 ac [ac] 5 postmodum
+```
+Doc 46: 5 after the last line?!
+Doc 92 5 in the middle of the line "5m cum cura..."
+Doc 112 15 --,,-- "... u 15t in forma..."
+Doc 232 20 --,,-- "Prefatus 20 igitur "
+Doc 234 ac [ac] 5 postmodum
 There must be 1-236 of these following, I just didn't notice!
-ak 236 r.20 someone has eaten a syllable and 20 jumped to the beginning of the next line
-ak 251 35 ut 35 infra
-ak 268 r. 5
-ak 284 like 236 above?
+Doc 236 r.20 someone has eaten a syllable and 20 jumped to the beginning of the next line
+Doc 251 35 ut 35 infra
+Doc 268 r. 5
+Doc 284 like 236 above?
 294 40 --,,--
 300b 25 & 30 --,,--
 303 45
@@ -345,22 +357,23 @@ ak 284 like 236 above?
 451 35
 452 20 middle
 452 50
+```
 
 ## 11.1.2022
 
 I need to go through No, No, No and r foil references
 
-(:[0-9][0-9][0-9]r)
+`(:[0-9][0-9][0-9]r)`
 
-<lb_folio="\1"/>
+`<lb_folio="\1"/>`
 
-Must continue with those with 1 or 2 nro and r and then those with :
+Must continue with those with 1 or 2 nro and `r` and then those with `:`
 
 ## 12.1.2022
 
-line numbers inserted \1<line number end>
+line numbers inserted `\1<line number end>`
 
-need to find the anchors of footnotes and mark the text critical apparatus with bold text
+need to find the anchors of footnotes and mark bold text in the text critical apparatus
 
 
 ## 13.1.2022
@@ -386,46 +399,59 @@ done:
 
 ## 25.4.2022
 
-removed formatting font size all 6 pt 1762 pcs -> consists of: line numbers, folios, supposedly small caps words in footnotes from end part e.g. ORHONEN; replaced by line break ^l
-Removed Sara Risbergs and associated (even) page numbers:
-[0-9][0-9][0-9]^13Sara Risberg
-->
-^l #line break
-164 pcs.
-Removed cross-page Auctoritate Papae's and their associated (odd) page numbers:
-[0-9][0-9][0-9]^13Auctoritate Papae ^= Edition
-[0-9][0-9][0-9]^13Auctoritate Papae - Edition
-->
+Removed *formatting > font > size*: all 6 pt 1762 pcs -> consists of:
+- line numbers,
+- folios,
+- end parts of fake-small-caps words in footnotes e.g. `ORHONEN` of `Korhonen`;
 
-^l
-163 pcs
+replaced by line break ^l
+
+Removed Sara Risbergs and associated (even) page numbers:  
+`[0-9][0-9][0-9]^13Sara Risberg`  
+->  
+`^l #line break`  
+164 pcs.
+
+
+Removed page header Auctoritate Papae's and their associated (odd) page numbers:  
+`[0-9][0-9][0-9]^13Auctoritate Papae ^= Edition`  
+`[0-9][0-9][0-9]^13Auctoritate Papae - Edition`  
+->  
+`^l`  
+163 pcs  
+
 208: LunenSIS regens. - 'sis' is a bigger font 11! just bigger
 Replaced with 9.5 pt as around.
+
 248: viti -> sexti
+
 437b: 3o -> tertio
 
 ## 1.5.2022
 Removed reference anchors 1-297:
 - font 5 pt
-- [0-9][0-9][0-9][0-9] - 198 pcs == ok and removed
-- [0-9][0-9] apparently 100 pcs, one by one removed
-- [0-9] 1-9 + 1, 1, 2 probably
+- `[0-9][0-9][0-9][0-9]` - 198 pcs == ok and removed
+- `[0-9][0-9]` apparently 100 pcs, one by one removed
+- `[0-9]` 1-9 + 1, 1, 2 probably
 - could not be found between the Latin
-- [a-z] 69 characters omitted, including endings of ordinal numbers and word endings, not in edit.
-- manually changed a few 5 pt -> 8.5 pt, of which ak 4-5 hit the title and were replaced by a line break in the Regesta deletion, corrected manually.
+- `[a-z]` 69 characters omitted, including endings of ordinal numbers and word endings, not inside edition.
+- manually changed a few 5 pt -> 8.5 pt, of which Doc 4-5 hit the title and were replaced by a line break in the Regesta deletion, corrected manually.
 - 5pt " " -> 9pt " " these remain only in headings
 - 5 pt nothing -> 9 pt nothing: may have contained line breaks.
 
-Regestas removed
+#### Regestas removed
 8.5 pt, not bold (because the numbers of the bundle references are also 8.5 pt):
-blank -> ^l (leave blank lines)
-Text-critical apparatus
-7,5 pt, includes single etc1, where the number is 7 pt.
-7 pt also includes paragraph breaks left over from superscripts.
-- 7 pt ^p -> 8 pt ^p 326 pcs
-50 remaining in 7 pt size, deleted
-also includes 9 pt size spaces before
-7,5 pt -> ^l
+- `blank` -> `^l` (leave blank lines)
+
+#### Text-critical apparatus
+- 7,5 pt, includes singular etc1's, where the number is 7 pt.
+- 7 pt also includes paragraph breaks left over from page headers.
+  - 7 pt `^p` -> 8 pt `^p` 326 pcs
+- 50 pcs remaining in 7 pt size, deleted
+
+also includes 9 pt size spaces from before
+
+7,5 pt -> `^l`
 
 ## ADDING XML TAGS
 
@@ -447,30 +473,40 @@ Lorem ipsum …
 
 ## 14.8.2022
 
-replaced by <, >, (/)
-<addenda></addenda>
-/ removed? foil change
-`&` -> `&amp;` can be done later
+### replace `<`, `>`, (`/`)  
+- `<addenda></addenda>`  
+- `/` removed? foil change  
+- `&` -> `&amp;` can be done later
 
-Removal of slashes: removed 110 slashes in font 9.5 / and replaced with "none"
-Add italics-tags: 
+Removal of slashes: removed 110 slashes in font 9.5 `/` and replaced with "none"
+
+### Add italics-tags: 
+
 italicized; any character `x` -> `<i>x</i>`
-(?)
-`<i>\1</i>`
-11 066 replacements made.
-Next, delete `</i><i>`
-10733 replacements made.
-Heading line marking:
-Font 10 pt
-(?)
-`<h2>\1</h2>`
-And correction: 
-`</h2><h2>` deletion and
 
-`</h2><h2>` delete and
-`</h2> <h2>` also, replace with *space*. Because 9 pt font size between headings (from removing references?)
+`(?)`  
+->  
+`<i>\1</i>`
+
+11 066 replacements made.
+
+Next, delete `</i><i>`  
+10733 replacements made.
+
+### Heading line marking:
+
+Font 10 pt
+
+`(?)`  
+->  
+`<h2>\1</h2>`
+
+And correction:  
+`</h2><h2>` delete and  
+`</h2> <h2>` also, replace with *space*. Because there is some 9 pt font size inside headings (from removing references?)
 
 ## 27.8.2022
+
 Somewhere along the way, `<`'s have been replaced by `{`'s and `>`'s by `}`'s.
 Header lines as specified above:
 7488 replacements
@@ -482,6 +518,7 @@ So now the end tags of h2 are on the next line, e.g:
 <h2>22 15.1 1450 Rome
 </h2>22a
 ```
+
 ## 28.8.2022
 
 Replacement of special characters not allowed:
@@ -492,7 +529,7 @@ Replacement of special characters not allowed:
 - `+` verbum vel verba (quae the following word(s)
 sequuntur) add. added (in the manuscript)
 
-discarded `&` character 1 ppl -> changed 1 ppl to "and"
+discarded `&` character 1 pcs -> changed 1 pcs to "and"
 likewise replace those that the editor thinks should be deleted `[` with the tag `<del>` 53 pcs
 `]` `</del>` as well 53 pcs
 
@@ -507,7 +544,7 @@ Saved all at once: vers. 4.0_tags
 
 Hyphens:
 
-ak 89 italics tag problem
+Doc 89 italics tag problem
 ```xml
 <i>litteras confes- </i>
 <i>sionales
@@ -515,7 +552,7 @@ ak 89 italics tag problem
 corrected manually.
 
 `-\n*`
-`[ blank ]`
+`[ empty ]`
 108 replaced. Resulted in some long lines.
 
 ```xml
@@ -556,96 +593,100 @@ pro omnibus. Philippus sancti Laurentii in Lucina.
 ### VS Code heading lines:
 
 357 hits
-```
+```xml
 <h2>([0-9]*) ([0-9]*)\.([0-9]*) ([0-9]*)(.*)
 </h2>
 ```
 `<h2 num="$1">$1 <date when="$4-$3-$2">$2.$3 $4</date>$5</h2>`
 
-Problem: Can't add zeros to a ISO date. One solution: make four substitutions separately for different cases according to the number of days and months.
+Problem: This is not able to add zeros to an ISO date. One solution: make four substitutions separately for different cases according to the length of the day and month numbers.
 
-ak 77 `<Rooma>` not replaced in Word `<Rome>`
+Doc 77 `<Rooma>` not replaced in Word `<Rome>`
 
-```
+```xml
 <h2>([0-9]*) ([0-9]*).([0-9]*) ([0-9]*)(.*)
 </h2>
 ``` 
 hits doc 77 even if I was thinking it shouldn't  
 ‘.’ has to be escaped.  
 reformat to  
-```
+```xml
 <h2>([0-9]*) ([0-9]*)\.([0-9]*) ([0-9]*)(.*)
 </h2>
 ```
-(With no place 14 items:
-```
+
+(Without a place 14 items:
+```xml
 <h2>([0-9]*) ([0-9]*)\.([0-9]*) ([0-9]*)(.*)
 </h2>
 ```
-not including bubdle entries.)
+not including bundle entries.)
 
 Could these work:
-replaced the 90 pieces of #hits with those with a single-digit day and month
-```
+
+#### replaced 90 pieces #hits those with a single-digit day and month
+```xml
 <h2>([0-9]*) ([0-9])\.([0-9]) ([0-9]*)(.*)
 </h2>
 ```
 `<h2 num="$1">$1 <date when="$4-0$3-0$2">$2.$3 $4</date>$5</h2>`
 
-
-### corrected 32 of those with one digit in the date, but two in the month
-```re
+#### ### corrected 32: those with one digit in the date, but two in the month
+```xml
 <h2>([0-9]*) ([0-9])\.(1[0-9]) ([0-9]*)(.*)
 </h2>
 ```
 `<h2 num="$1">$1 <date when="$4-$3-0$2">$2.$3 $4</date>$5</h2>`
 
-####170 units when there are two digits in a day and one a month
-```
+#### #### 170 replacements when there are two digits in the day and one in the month
+```xml
 <h2>([0-9]*) ([1-3][0-9])\.([0-9]) ([0-9]*)(.*)
 </h2>
 ```
 `<h2 num="$1">$1 <date when="$4-0$3-$2">$2.$3 $4</date>$5</h2>`
 
-### is replaced when there are two numbers per day and 65 per month
-```
+#### ### 65 are replaced when there are two digits in both the day and month
+```xml
 <h2>([0-9]*) ([1-3][0-9])\.(1[0-9]) ([0-9]*)(.*)
 </h2>
 ```
 `<h2 num="$1">$1 <date when="$4-$3-$2">$2.$3 $4</date>$5</h2>`
 
 357 replacement made in a total of four batches, as should be found in the code above.
-Bundles:
+
+
+### Bundles:
+
 225-229 awkward date mess, to be done by hand -> done by hand
 
-```
+```xml
 <h2>([0-9]*)-([0-9]*) ([0-9]*)\.([0-9]*) ([0-9]*)(.*)
 </h2>
 ```
 finds 35 hits.
 
-```
+```xml
 <h2>([0-9]*)–([0-9]*) ([0-9])\.([0-9]) ([0-9]*)(.*)
 </h2>
 ```
 `<h2 num="$1" to_num="$2" bundle="y">$1–$2 <date when="$5-0$4-0$3">$3.$4 $5</date>$6</h2>`
 9 items
 
-```
+```xml
 <h2>([0-9]*)–([0-9]*) ([0-9])\.(1[0-9]) ([0-9]*)(.*)
 </h2>
 ```
 `<h2 num="$1" to_num="$2" bundle="y">$1–$2 <date when="$5-$4-0$3">$3.$4 $5</date>$6</h2>`
 2 items
 
-```
+```xml
 <h2>([0-9]*)–([0-9]*) ([1-3][0-9])\.([0-9]) ([0-9]*)(.*)
 </h2>
 ```
 `<h2 num="$1" to_num="$2" bundle="y">$1–$2 <date when="$5-0$4-$3">$3.$4 $5</date>$6</h2>`
 18 items
 
-```
+```xml
 <h2>([0-9]*)–([0-9]*) ([1-3][0-9])\.(1[0-9]) ([0-9]*)(.*)
 </h2>
 ```
@@ -665,7 +706,9 @@ the bundle attribute is added to the first corrected ones:
 
 Replaced the `<` `>` signs in the header with `{` `}`
 
-`<h2 num="77" bundle="n">77 <date when="1458">1458/1459</date> {Rome}</h2>`
+```xml
+<h2 num="77" bundle="n">77 <date when="1458">1458/1459</date> {Rome}</h2>
+```
 
 ## 5.9.2022 hyphen problem
 
@@ -677,7 +720,7 @@ And even Adobe Reader doesn't find all hyphens.
 In Adobe Reader: 
 DOC. 16:
 Upsalensis is not found, its hyphen is found.
-Ak. 17 None of these hyphens can be found in the Reader search.
+Doc. 17 None of these hyphens can be found in the Reader search.
 - natalium is found and colours both lines from start to finish.
 - ecclesiasticum is not found.
 - auctoritate also colours two lines.
@@ -687,7 +730,7 @@ Ak. 17 None of these hyphens can be found in the Reader search.
 
 need to keep Risbergs numbering and info about doc boundaries:
 `<lb num=” [nro] “ >[nro]</lb>`
-```
+```xml
 <h2 num="23" to_num="24" bundle="y">23–24 <date when="1450-02-07">7.2 1450</date> Rome</h2>
 <edition>
 <lb num=”23“>23</lb> Similem gratiam Christoforo Olavi scholari Aboensis diocesis de
@@ -799,30 +842,37 @@ the end of the header
 header and <edition>'
 
 ### Back: Where are the hyphens?
-At least some of the hyphens have disappeared from the commit.
+At least some of the hyphens have disappeared at the commit:
  6b8564 Remove hyphens. 28 Aug 2022
-I think there was a problem here:
--\n*
-[empty]
-108 replaced. There were long lines.
 
-March 1, 2023
-Spelling corrected
--\s
-*\s*(\w*\s)
+I think there was a problem here:  
+`-\n*`  
+`[ empty ]`  
+108 replaced. Resulted in some long lines.
 
-$1
-(line break Ctrl-Enter)
-66 pcs
+## March 1, 2023
+
+### Hyphens corrected  
+
+`-\s`  
+`*\s*(\w*\s)`  
+
+`$1`  
+(line break Ctrl-Enter)  
+66 pcs  
 Note! This breaks line pairs with a comma or period at the end of the first word of the second line! Manually corrected 5 of them.
-<document> tags:
-<h2
-</document>
 
-<document>
-<h2
+### `<document>` tags:
+
+`<h2`  
+`</document>`
+
+`<document>
+<h2`  
 395 pcs, the first one and the bug was fixed by hand.
-Several wittnesses
+
+### Several wittnesses
+
 bundle="y">
 bundle="y" several_wittnesses="n">
 bundle="n">
@@ -888,9 +938,9 @@ If you search for anything in bold, then e.g. the ac-numbers on the page before 
 
 [sic] obviously means an error in the original. TEI-marking by hand?  
 [fol. ..] entry in doc 556, and in others.  
-ak 618: at the end of the crucis is the sign of the cross, and in others  
-ak 715: the cross is a plus! Fiat D. s. +.   
-ak 622 contains a pair of curved brackets (). Are there many elsewhere, in the regesta?
+Doc 618: at the end of the crucis is the sign of the cross, and in others  
+Doc 715: the cross is a plus! Fiat D. s. +.   
+Doc 622 contains a pair of curved brackets (). Are there many elsewhere, in the regesta?
 
 ### Oct 8, 2022
 Document numbers hit:  
@@ -900,7 +950,7 @@ Search in bold, use special characters
 Highlights 1192 items.
 There are 1198 documents, 6 are missing.
 
-Ak 177 (calendar) is missing a dot in the number. I wonder if there are any elsewhere?
+Doc 177 (calendar) is missing a dot in the number. I wonder if there are any elsewhere?
 [1147] full
 [1119] calendar
 [1076] full
@@ -1161,7 +1211,7 @@ Plan:
 `\<p\>(^13[0-9 ]{1;}\<pb/\>(*^13)`  
 But the next page can continue with anything!
 
-***Document 15 is not indented!*** Why? Are there others? At least ak 78. The original 15 is indented.
+***Document 15 is not indented!*** Why? Are there others? At least Doc 78. The original 15 is indented.
 - v. 1.6 not included (document limits)
 - v. 1.5 is nested.
 
@@ -1259,8 +1309,8 @@ DOC 982: "984." period bold out.
 - / -> %
 - \ -> ¤
 - \\\\ // -> `<add place="margin">`
-- (ak 486 p. 91 Supplications- 02 with space is left)
-- (ak 816 "de speciali D. /%s. †. I.\..¤. Reg. 4": as if the periods were included in the substitution, why? Seems ok.)
+- (Doc 486 p. 91 Supplications- 02 with space is left)
+- (Doc 816 "de speciali D. /%s. †. I.\..¤. Reg. 4": as if the periods were included in the substitution, why? Seems ok.)
 ##### 1.3:
 DOC 486 p. 91 space Supplications corrected
 ##### 1.4:
@@ -1268,17 +1318,17 @@ DOC 486 p. 91 space Supplications corrected
 - (At least in doc 609 the overline also appears in the tags, including the ending tag: `ex<add place="above">cons</add>istente`")  
 **FIXME: STRIKETHROUGHS SHOULD BE MARKED BEFORE THIS?**  
 Search for `Superscripted: <` / what about italics-slashes-...?  
-The p-letter is crossed out in ak 715.
+The p-letter is crossed out in Doc 715.
 #### 1.5:
 - `<pb>` -> `<pb/>`
 - & -> `&amp;`
 #### 1.6:
-- ak 177 dot reportedly added
+- Doc 177 dot reportedly added
 - `<document>` tags, numbers
 - footnotes removed (numbers left, up and down)
-- ak 77 some strange formatting, 78, 513 - 514, (692-694, 822, 893, 977)
+- Doc 77 some strange formatting, 78, 513 - 514, (692-694, 822, 893, 977)
 #### 1.7:
- ak 920, 951, 1076, 1118, 1119, 1147 [] in bold: [920] etc
+ Doc 920, 951, 1076, 1118, 1119, 1147 [] in bold: [920] etc
 #### 1.8:
  document tags for 1.7 corrected manually
 #### 1.9:
@@ -1304,7 +1354,7 @@ So, I have to go back to v. 1.3.
   - saved v. 2.01
 - footnotes omitted, 9 pt
   - 89_711 replacement, saved v. 2.02.
-- & -> `&amp;` ak 581 regesta
+- & -> `&amp;` Doc 581 regesta
   - saved 2.03
 - strikethrough `<del>`? 515 dig_tur (tur with lower case, same as in original? FIXME)
   - 801 replacement + 724 replacement deletion of spaces
@@ -1389,7 +1439,7 @@ Good!
 ## 2023-09-01 DOC 15 indentation again
 
 v. 2.07
-Again the ak 15 indentation is broken, and the gap disappeared between regesta and edition, the P-sign of the track change is there.
+Again the Doc 15 indentation is broken, and the gap disappeared between regesta and edition, the P-sign of the track change is there.
 
 - 2.06 broken
 - 2.05 broken
@@ -2124,7 +2174,7 @@ Bold, Italic, Centered
 23 replacements
 
 What happened before doc 3363?  
-```
+```xml
 De perpetuis, ‘Cupientes’, confessionalibus, sententiis generalibus, et altaribus portatilibus284<type></type>
 ```
 Oh yeah, there is no paragraph end (^13) except after the number which is not bold.
@@ -2293,7 +2343,7 @@ seems to find only document numbers.
 -------------------------------------
 
 (When `</p>` is overstriked, it's tagged like this:  
-```
+```xml
 .<del></p>
 </del>1617.	Rome
 ```
@@ -2380,7 +2430,7 @@ Removal of footnotes resulted in anchors (on the same line) going together like 
 This finds a single line of footnote anchors before a page break:  
 `[0-9]{1;}^t^13`  
 Replacement would result in:  
-```
+```xml
 12\t\n<pb/>
 13\t\n<pb/>
 14\t\n<pb/>
@@ -2422,7 +2472,7 @@ Saved as 1.3.1
 
 #### `</edition>`
 
-```
+```xml
 </p>^13</document>  
     ^
 ```
@@ -2487,7 +2537,7 @@ End regestas, editions, documents...
 -------------------------------
 
 Doc 1428: Last paragraph not inside `<p>`. Why?
-```
+```xml
 <del>Et quod committatur episcopo Lu[n]doniensi vel eius vicario in spiritualibus, cum in diocesi sua moram trahat de presenti et in futuro trahere intendat, et dictum monasterium de Syon sui diocesis existat</del>. Committatur et si, vocatis vocandis, premissa vera esse invenerit et quod exponens ultra in voto non processerit, declaret ut petitur.
 ```
 
@@ -2503,7 +2553,7 @@ Inside Doc 1818: `<document num="1805">` in error
 
 
 Doc 2003 not marked:
-```
+```xml
 <p>Fiat de speciali et expresso et componat cum datario A. episcopus Lunensis regens.</p>
 31
 
