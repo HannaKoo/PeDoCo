@@ -9,21 +9,26 @@ General observations
 Open the pdf in Word: 
 - line breaks doesn't work
 - hyphens disappear - no, the hyphenation is different?!
-  - direct: ~160 lines, copypaste: ~100 lines
+  - direct: ~160 hyphens, copypaste: ~100 hyphens
 
 Copypaste from Adobe Reader to Word: 
 - line breaks are preserved
-- page numbers and superscripts are inserted as body text
-- characters # { } $ ¤ £ \ § ½ @ % = ´ ´ ` ^ ~ * not found
-< [ ] ( / | & found
-<suppl/>
+- page numbers and headers/footers become ordinary body text
+
+Character searching:
+
+- characters ``# { } $ ¤ £ \ § ½ @ % = ´ ` ^ ~ *`` not found
+- `< [ ] ( / | &` are found
+
+`<suppl/>`
+
 and from the editing principles we read that:
 
-[ ] *delenda* to be deleted
-/ *nova codicis pagina* new page of a manuscript
-< > *supplenda* to be added
-† † *turbata* corrupt
-+ *verbum vel verba* (*quae* the following word(s)
+`[ ]` *delenda* to be deleted  
+`/` *nova codicis pagina* new page of a manuscript  
+`< >` *supplenda* to be added  
+`† †` *turbata* corrupt  
+`+` *verbum vel verba* (*quae* the following word(s)  
 *sequuntur*) add. added (in the manuscript)
 
  - 6: a reference number 1 in N1
@@ -45,7 +50,7 @@ How do I take into account that almost every document has some entry in the appa
 And further, what has been that has not usually bothered to be copied into the register copies and has been completed by Sara. It takes a while, but I think it's worth the effort for later stages. There is variation between scribes on this and Sara deals with it in the introduction. However, formulas are regularly omitted in many documents.
 And then again, on the other hand, is it relevant that footnotes contain references to canon law or biblical passages, for example? Or other editions? I think not, but I don't know. Do you have to do a Bible reference tag, etc.? Will be useful for genre/register analysis later?
 
-I got help and guidance on italics from friend. Now we are wondering if html or xml would be a suitable format? <> is already used in Auctoratite, so it doesn't fit the format of the tag. This part still causes a problem and we have not got any further. Discussed Timo's # suggestion. One possibility is to take <> out of Auctoratite.
+I got help and guidance on italics from friend. Now we are wondering if html or xml would be a suitable format? `<>` is already used in Auctoratite, so it doesn't fit the format of the tag. This part still causes a problem and we have not got any further. Discussed Timo's `#` suggestion. One possibility is to take `<>` out of Auctoratite.
 Then, let's look at the a and b formats of the documents. Or one or the other? This has been explained in the introduction, so there are not many documents where this needs to be considered, but I still think we need to pick a guideline. If you take both, then each of the a and b versions should include information about what type of document it is. List below. 
 
 Direct quote from the edition information:
@@ -63,16 +68,17 @@ cannot be traced in the archives of the Penitentiary.52 Furthermore,
 Swedish and Finnish archives hold information on six Penitentiary cases
 that are also to be found among the Penitentiary records."
 
-Type of source Number of cases
-Littera ecclesiae 					1		
-Copy of supplication 				437
-Original supplication 				1
-Original supplication and its copy 			1
-Letter of grace 					2
-Letter of grace and copy of supplication 		3
-Copy of letter of grace 				5
-Copy of letter of grace and copy of supplication 	3
-Total 453
+Type of source                                   | Number of cases
+-------------------------------------------------|--------------------
+Littera ecclesiae                                |	1		
+Copy of supplication                             |	437
+Original supplication                            |	1
+Original supplication and its copy               |	1
+Letter of grace                                  |	2
+Letter of grace and copy of supplication         |	3
+Copy of letter of grace                          |	5
+Copy of letter of grace and copy of supplication |	3
+Total                                            | 453
 
 Risberg and Salonen
 
@@ -245,7 +251,7 @@ No difference is made here: <headingline>275–276 7.7 1483<endofdate>
 
 Same entry 287-288 22.5 1485
 
-561v is read in the margin of 372
+561v is written in the margin of 372
 
 check 206-207
 
@@ -254,9 +260,9 @@ check 206-207
 
 ## 05.01.2022 
 
-402 at the beginning something wrong
+Doc. 402: at the beginning something wrong
  (assistant is investigating):
- 2.7 vs 2.8: blank line in 9,5 font, comes up with a non necessary tag, but what about the missing tag on line 1?
+ 2.7 vs 2.8: blank line in 9,5 font, becomes an extraneous tag, but what about the missing tag on line 1?
 
 402 EndOfPlace is strangely missing?
 
@@ -266,39 +272,43 @@ check 206-207
 05.01.2022
 
 Done:
+
 Visual Studio Code:
+```xml
 </apparatus>
 <apparatus>
---Replace--
+```
+--Replace--  
 Ctrl+Enter
 
-and the same for <edit>
+and the same for `<editio>`
 
 TODO:
 
 Line numbers and other missing <edition> tags cause problems:
 Do you mark the line numbers with something first, and then you can put a suffix at the end of the line numbers, and then do it normally?
 Similarly, footnotes to the numbers mess up the adjacent numbers, e.g. No. 402
- <headingline>402236 31.10 1509 Rome
+`<headingline>402236 31.10 1509 Rome`
 
-Quotes ' " " etc. should probably be fixed. From the Word save or in the editor or in Python?
+Quotes `’ “ ”` etc. should probably be fixed. From the Word save or in the editor or in Python?
 
-<lb_folio="1:17r"/> there is no XML, how to fix? <lb> is the line beginning of TEI-xml, so should be <lb folio="1:17v"/> ?
+`<lb_folio="1:17r"/>` is not XML, how to fix? `<lb>` is the line beginning of TEI-xml, so it should be `<lb folio="1:17v"/>` ?
 But if it's not always at the beginning of the line, then lb might be inappropriate?
 
 Line numbers in TEI?:
 
 https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-lb.html
-<lb n="5"/>Row five.  # Like this?
 
- document 437 is a placeholder without the 455r tags
+`<lb n="5"/>Row five.`  # Like this?
+
+In document 437 there is a folio marking 455r without tags
 
 ## 6.1.2022 completed documents exported in bundles
 
 
 ## 9.1.2022
 
-Line numbers: Arial - Normal - 6pt only hits the line numbers, italics will hit the rest.
+Line numbers: Arial - Normal - 6pt hits only the line numbers, italics will include also other things.
 
 Ac 46: 5 after the last line?!
 ak 92 5 in the middle of the line "5m cum cura..."
@@ -354,23 +364,28 @@ need to find the anchors of footnotes and mark the text critical apparatus with 
 
 
 ## 13.1.2022
-made:
 
-([0-9]) *space*
-\1<end of apparatus critucus number>
+done:
 
-><note anchor="1"/> and SHOULD REMEMBER TO REMOVE <note_anchor><note anchor="1"/></note_anchor> unnecessary
+`([0-9]) *space*`
 
-A new round
-Must be deleted first 
-x Sara Risberg and book title
-x page numbers
-x text-critical appendices
-x historical references
-x Vatican place markings
-x anchors for footnotes
-hyphens! In code?
-25.4.2022
+`\1<end of apparatus critucus number>`
+
+`><note anchor="1"/>` and MUST REMEMBER TO REMOVE `<note_anchor><note anchor="1"/></note_anchor>` EXTRANEOUS
+
+### A new round
+
+#### Must be deleted first 
+- [x] Sara Risberg and book title
+- [x] page numbers
+- [x] text-critical appendices
+- [x] historical references
+- [x] Vatican place markings
+- [x] anchors for footnotes
+- [ ] **hyphens!** In VS Code?
+
+## 25.4.2022
+
 removed formatting font size all 6 pt 1762 pcs -> consists of: line numbers, folios, supposedly small caps words in footnotes from end part e.g. ORHONEN; replaced by line break ^l
 Removed Sara Risbergs and associated (even) page numbers:
 [0-9][0-9][0-9]^13Sara Risberg
@@ -412,20 +427,23 @@ Text-critical apparatus
 also includes 9 pt size spaces before
 7,5 pt -> ^l
 
-##ADDING XML TAGS
+## ADDING XML TAGS
 
 ## 8.5.2022
 To be added based on the formatting, the rest will be done in Code?:
-`<i>` italics
-headings:
-`<dokumentti My_nr=”23” aucnro=”27” date=”1555-05-06” place=”Rome” canonlaw=”matrimonialibus”>`
+- `<i>` italics
+- headings:
+```xml
+<document My_nr=”23” aucnro=”27” date=”1555-05-06” place=”Rome” canonlaw=”matrimonialibus”>
 Lorem ipsum … 
 </document>
-To be added by replacement:
-ampersands: & replaced by &amp;
-- where are these found?
-additions: < replaced by <addenda>? and > replaced by </addenda>.
-/ omitted? ( are foil changes) 
+```
+
+#### To be added by replacement:
+- ampersands: `&` replaced by `&amp;`
+  - where are these used/found?
+- additions: `<` replaced by `<addenda>`? and `>` replaced by `</addenda>`.
+- `/` omitted? (They are foil changes) 
 
 ## 14.8.2022
 
@@ -460,7 +478,7 @@ Header lines as specified above:
 `</h2> <h2>` not found, although document 20 seems to have one!
 The search function in the side panel finds 29, and then the replacement function part: 29 replacements. Could the font choice have been left ambiguous.
 So now the end tags of h2 are on the next line, e.g:
-```
+```xml
 <h2>22 15.1 1450 Rome
 </h2>22a
 ```
@@ -490,7 +508,7 @@ Saved all at once: vers. 4.0_tags
 Hyphens:
 
 ak 89 italics tag problem
-```
+```xml
 <i>litteras confes- </i>
 <i>sionales
 ```
@@ -500,7 +518,7 @@ corrected manually.
 `[ blank ]`
 108 replaced. Resulted in some long lines.
 
-```
+```xml
 <h2>130–133 3.12 1466 Rome
 </h2>
 ```
@@ -509,7 +527,7 @@ corrected manually.
 Risberg numbering = 130-133
 <edition>
 
-<old_ed_nr>130</old_ed_nro> Nicolaus Nicolai canonicus Aboensis; 131 Laurentius rector parrochialis
+<old_ed_nr>130</old_ed_nr> Nicolaus Nicolai canonicus Aboensis; 131 Laurentius rector parrochialis
 ecclesie Nerpis presbyter Aboensis diocesis; nobilis Bartichino Iapson et
 eius uxor dicte diocesis; nobilis Iohannes Olafson ac Catherina eius uxor
 petunt litteras confessionales ad perpetuum duraturas. Fiat de speciali
@@ -517,8 +535,12 @@ petunt litteras confessionales ad perpetuum duraturas. Fiat de speciali
 pro omnibus. Philippus sancti Laurentii in Lucina.
 </edition>
 
+```xml
 <h2 id=”ap125” num=”130” to_num=”133” collective_bundle=”y/n” date=”1466-12-03” place=”Rome”>130–133 3.12 1466 Rome</h2>
+```
+```xml
 <h2 id=”ap125” num=”130” to_num=”133”>130–133  <date when=”1466-12-03”>3.12 1466</date> <place>Rome</place></h2>
+```
 
 ### metadata 
 old Risberg nr = 130-133
@@ -532,35 +554,47 @@ pro omnibus. Philippus sancti Laurentii in Lucina.
 </edition>
 
 ### VS Code heading lines:
+
 357 hits
+```
 <h2>([0-9]*) ([0-9]*)\.([0-9]*) ([0-9]*)(.*)
 </h2>
-<h2 num="$1">$1 <date when="$4-$3-$2">$2.$3 $4</date>$5</h2>
+```
+`<h2 num="$1">$1 <date when="$4-$3-$2">$2.$3 $4</date>$5</h2>`
+
 Problem: Can't add zeros to a ISO date. One solution: make four substitutions separately for different cases according to the number of days and months.
 
-ak 77 <Rooma> not replaced in Word <Rome>
+ak 77 `<Rooma>` not replaced in Word `<Rome>`
 
+```
 <h2>([0-9]*) ([0-9]*).([0-9]*) ([0-9]*)(.*)
-</h2> hits doc 77 even if I was thinking it shouldn't
-‘.’ has to be escaped.
-reformat to
+</h2>
+``` 
+hits doc 77 even if I was thinking it shouldn't  
+‘.’ has to be escaped.  
+reformat to  
+```
 <h2>([0-9]*) ([0-9]*)\.([0-9]*) ([0-9]*)(.*)
 </h2>
-
+```
 (With no place 14 items:
+```
 <h2>([0-9]*) ([0-9]*)\.([0-9]*) ([0-9]*)(.*)
 </h2>
+```
 not including bubdle entries.)
 
 Could these work:
 replaced the 90 pieces of #hits with those with a single-digit day and month
+```
 <h2>([0-9]*) ([0-9])\.([0-9]) ([0-9]*)(.*)
 </h2>
-<h2 num="$1">$1 <date when="$4-0$3-0$2">$2.$3 $4</date>$5</h2>
+```
+`<h2 num="$1">$1 <date when="$4-0$3-0$2">$2.$3 $4</date>$5</h2>`
 
 
 ### corrected 32 of those with one digit in the date, but two in the month
-```
+```re
 <h2>([0-9]*) ([0-9])\.(1[0-9]) ([0-9]*)(.*)
 </h2>
 ```
@@ -674,9 +708,38 @@ hyphens corrected
 ### The hyphens, part 2: Linux
 Evince: Apparently can find all hyphens, but can't distinguish them from em-dashes.
 
-Okular: Seems to find all the hyphens, and distinguish them from the dashes! A bit weird where it starts searching, but it's so fast that you can search from the beginning with the button down.
+Okular: Seems to find all the hyphens, and distinguish them from the dashes! A bit weird/unpredictable where it starts searching, but it's so fast that you can search from the beginning with the button down.
 
-## 26.6.2024 
+## 26.6.2024 Towards the PeDoCo format
+
+`<document>`
+
+`<text>`
+
+and 
+
+`</document>`
+
+`</text>`
+
+395 replacements in both.
+
+### TODO: 
+
+- [ ] Translate bundle tags -> bundle="y/n"
+- [ ] `<h2>` -> split attributes to `<text>` and `<front>`
+- [ ] Add PeDoCo numbering:
+  - I Auctoritate
+    - Just replicate auctoritate numbering? 1–453
+    - versions (a/b)?
+    - bundles?
+  - II England/Wales
+    - numbers: 454–nn ?
+  - III Norway 
+    - numbers:
+
+
+
 
 
 
