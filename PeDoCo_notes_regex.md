@@ -2,6 +2,10 @@
 
 This .md file contains the iterative process with detailed notes and various regex bits of code to giving XML structure to the following publications provided as proofreading copies by the editors 
 
+- S. Risberg, K. Salonen, Appendix: Acta Pontificum Suecica. 2, Acta Poenitentiare: Auc-
+toritate papae: the church province of Uppsala and the apostolic penitentiary 1410-1526,
+Diplomatarium Suecanum, Riksarkivet, Stockholm, 2008.
+
 - P. D. Clarke, P. N. R. Zutshi, Supplications from England and Wales in the registers of the
 Apostolic Penitentiary, 1410-1503. Volume I, 1410-1464, Canterbury and York Society, Vol.
 CIII, Canterbury and York Society, Woodbridge, Suffolk, 2013.
@@ -77,7 +81,7 @@ How do I take into account that almost every document has some entry in the appa
 And further, what has been that has not usually bothered to be copied into the register copies and has been completed by Sara. It takes a while, but I think it's worth the effort for later stages. There is variation between scribes on this and Sara deals with it in the introduction. However, formulas are regularly omitted in many documents.
 And then again, on the other hand, is it relevant that footnotes contain references to canon law or biblical passages, for example? Or other editions? I think not, but I don't know. Do you have to do a Bible reference tag, etc.? Will be useful for genre/register analysis later?
 
-I got help and guidance on italics from friend. Now we are wondering if html or xml would be a suitable format? `<>` is already used in Auctoratite, so it doesn't fit the format of the tag. This part still causes a problem and we have not got any further. Discussed Timo's `#` suggestion. One possibility is to take `<>` out of Auctoratite.
+I got help and guidance on italics from friend. Now we are wondering if html or xml would be a suitable format? `<>` is already used in Auctoratite, so it doesn't fit the format of the tag. This part still causes a problem and we have not got any further. Discussed *ANON supervisors*'s `#` suggestion. One possibility is to take `<>` out of Auctoratite.
 Then, let's look at the a and b formats of the documents. Or one or the other? This has been explained in the introduction, so there are not many documents where this needs to be considered, but I still think we need to pick a guideline. If you take both, then each of the a and b versions should include information about what type of document it is. List below. 
 
 Direct quote from the edition information:
@@ -166,7 +170,7 @@ promoveri et unum aliud beneficium ecclesiasticum, etiam si curam
 habeat animarum, obtinere possit, secum dispensare dignemini per omnia 
 ut supra in proxima. Fiat de speciali ad unum aliud et quod semel.</editio>
 ```
-Supervisor Veronika Laippala requested that the Latin words are in Conll form
+Supervisor *ANON* requested that the Latin words are in Conll form
 
 File: `1_doc_experiment_word_list_data_experiment.xlsx`
 
