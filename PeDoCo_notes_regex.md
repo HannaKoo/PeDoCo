@@ -2,8 +2,8 @@
 
 This .md file contains the iterative process with detailed notes and various regex bits of code to giving XML structure to the following publications provided as proofreading copies by the editors 
 
-- S. Risberg, K. Salonen, *Appendix: Acta Pontificum Suecica. 2, Acta Poenitentiare: Auc-
-toritate papae: the church province of Uppsala and the apostolic penitentiary 1410-1526*,
+- S. Risberg, K. Salonen, *Appendix: Acta Pontificum Suecica. 2, Acta Poenitentiare: Auctoritate 
+papae: the church province of Uppsala and the apostolic penitentiary 1410-1526*,
 Diplomatarium Suecanum, Riksarkivet, Stockholm, 2008.
 
 - P. D. Clarke, P. N. R. Zutshi, *Supplications from England and Wales in the registers of the
@@ -797,7 +797,7 @@ and
 
 395 replacements in both.
 
-### TODO: 
+### TODO (see also [Combine XMLs – plans](#combine-xmls--plans)): 
 
 - [ ] Translate bundle tags -> bundle="y/n"
 - [ ] `<h2>` -> split attributes to `<text>` and `<front>`
@@ -1522,7 +1522,7 @@ Strikethrough, No Double strikethrough
 
 Saved 2.1.2
 
-# In what order should things be done?
+## In what order should things be done?
 
 1. footnotes - remove 9 pt
 1. manual corrections
@@ -1545,7 +1545,7 @@ Saved 2.1.2
 
 ### 2023-09-04 `<i>`, `<add>`, `<pope>`
 
-**Kokeilu:** `<document>`, `<regesta>`, `<edition>` to 2.07.
+**Test:** `<document>`, `<regesta>`, `<edition>` to 2.07.
 
 `(*)^13`  
 Indent left 12 pt
@@ -1643,7 +1643,7 @@ Saved as 2.1.7
 
 ---------------------------------
 
-# IDEA: 
+## IDEA: 
 
 Make a second version with only the indented Latin/edits. And even a third version with just the unindented ones.
 
