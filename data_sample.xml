@@ -20,17 +20,17 @@ ut supra in proxima. Fiat de speciali ad unum aliud et quod semel.</p>
 </text>
 
 
-<text n="13" to_num="15" source="AP0013" source_to_num="AP0015" type="FIXME" bundle="y" several_wittnesses="n">
+<text n="13" source="AP" onum="13" to_num="15" type="FIXME" bundle="y" several_wittnesses="n">
 <front>
 <docDate><date when="1448-02-04"/><placeName type="place-issue">Rome</placeName></docDate>
 </front><body>
-<lb num="13">13</lb><p>Supplicatur sanctitati vestre pro parte devoti vestri Nicolai Laurentii
+<lb onum="13">13</lb><p>Supplicatur sanctitati vestre pro parte devoti vestri Nicolai Laurentii
 clerici Upsalensis diocesis, quatenus non obstante defectu natalium,
 quem patitur de presbytero genitus et soluta, dignetur sanctitati vestri
 ut supra. Fiat de speciali. Dominicus sancte Crucis.</p>
-<lb num="14">14</lb><p>Similiter dispensatum est Erico Mathie clerico Upsalensis diocesis
+<lb onum="14">14</lb><p>Similiter dispensatum est Erico Mathie clerico Upsalensis diocesis
 simili defectu non obstante.</p>
-<lb num="15">15</lb><p>Similiter Iohanni Mathie clerico Upsalensis diocesis simili defectu
+<lb onum="15">15</lb><p>Similiter Iohanni Mathie clerico Upsalensis diocesis simili defectu
 non obstante.</p>
 </body>
 </text>
