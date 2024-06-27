@@ -2,26 +2,26 @@
 
 This .md file contains the iterative process with detailed notes and various regex bits of code to giving XML structure to the following publications provided as proofreading copies by the editors 
 
-- S. Risberg, K. Salonen, Appendix: Acta Pontificum Suecica. 2, Acta Poenitentiare: Auc-
-toritate papae: the church province of Uppsala and the apostolic penitentiary 1410-1526,
+- S. Risberg, K. Salonen, *Appendix: Acta Pontificum Suecica. 2, Acta Poenitentiare: Auc-
+toritate papae: the church province of Uppsala and the apostolic penitentiary 1410-1526*,
 Diplomatarium Suecanum, Riksarkivet, Stockholm, 2008.
 
-- P. D. Clarke, P. N. R. Zutshi, Supplications from England and Wales in the registers of the
-Apostolic Penitentiary, 1410-1503. Volume I, 1410-1464, Canterbury and York Society, Vol.
+- P. D. Clarke, P. N. R. Zutshi, *Supplications from England and Wales in the registers of the
+Apostolic Penitentiary, 1410-1503*. Volume I, 1410-1464, Canterbury and York Society, Vol.
 CIII, Canterbury and York Society, Woodbridge, Suffolk, 2013.
 
-- P. D. Clarke, P. N. R. Zutshi, Supplications from England and Wales in the registers of the
-Apostolic Penitentiary, 1410-1503. Volume II, 1464-1492, Canterbury and York Society, Vol.
+- P. D. Clarke, P. N. R. Zutshi, *Supplications from England and Wales in the registers of the
+Apostolic Penitentiary, 1410-1503*. Volume II, 1464-1492, Canterbury and York Society, Vol.
 CIV, Canterbury and York Society, Woodbridge, Suffolk, 2014.
 
-- P. D. Clarke, P. N. R. Zutshi, K. Wilson-Lee, Supplications from England and Wales in the
-registers of the Apostolic Penitentiary, 1410-1503. Volume III, 1492-1503, Canterbury and
+- P. D. Clarke, P. N. R. Zutshi, K. Wilson-Lee, *Supplications from England and Wales in the
+registers of the Apostolic Penitentiary, 1410-1503*. Volume III, 1492-1503, Canterbury and
 York Society, Vol. CV, Canterbury and York Society, Woodbridge, Suffolk, 2015.
 
 And the text file that is the basis of the Latin text in the edition provided by the author
 
-- Jørgensen, G. Saletnich, Synder og pavemakt: botsbrev fra Den Norske Kirkeprovins
-og Suderøyene til Pavestolen, 1438-1531, Diplomatarium Poenitentiariae Norvegicum,
+- Jørgensen, G. Saletnich, *Synder og pavemakt: botsbrev fra Den Norske Kirkeprovins
+og Suderøyene til Pavestolen, 1438-1531*, Diplomatarium Poenitentiariae Norvegicum,
 Misjonshøgskolens forlag, 2004.
 
 The file is organized by edition, so that first the code and comments are on Swedish data, then Norway and lastly England and Wales. The citations from the editions are subject to copyright law and may not be reproduced without reference to their respective editors, as stated above per edition.
