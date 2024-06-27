@@ -799,7 +799,7 @@ and
 
 ### TODO (see also [Combine XMLs – plans](#combine-xmls--plans)): 
 
-- [ ] Translate bundle tags -> bundle="y/n"
+- [x] Translate bundle tags -> bundle="y/n"
 - [ ] `<h2>` -> split attributes to `<text>` and `<front>`
 - [ ] Add PeDoCo numbering:
   - I Auctoritate
@@ -3233,3 +3233,28 @@ length = 698
 [(1, 28), (6, 31), (43, 31), (118, 31), (130, 32), (63, 34),
   . . . 
  (16, 406), (45, 430), (29, 458), (80, 483), (71, 517), (78, 582), (76, 587), (86, 587), (84, 772)]
+
+
+## 27.6.2024 Plan Auctoritate bundles
+
+Now:
+```xml
+<text n="13" source="AP" onum="13" to_num="15" type="FIXME" bundle="y" several_wittnesses="n">
+<front>
+<docDate><date when="1448-02-04"/><placeName type="place-issue">Rome</placeName></docDate>
+</front><body>
+<lb onum="13">13</lb><p>Supplicatur sanctitati vestre pro parte devoti vestri Nicolai Laurentii
+clerici Upsalensis diocesis, quatenus non obstante defectu natalium,
+quem patitur de presbytero genitus et soluta, dignetur sanctitati vestri
+ut supra. Fiat de speciali. Dominicus sancte Crucis.</p>
+<lb onum="14">14</lb><p>Similiter dispensatum est Erico Mathie clerico Upsalensis diocesis
+simili defectu non obstante.</p>
+<lb onum="15">15</lb><p>Similiter Iohanni Mathie clerico Upsalensis diocesis simili defectu
+non obstante.</p>
+</body>
+</text>
+```
+
+Get rid of `<lb>`? and the text number `>13<`
+
+Possible TEI tags: div, group, ...?
