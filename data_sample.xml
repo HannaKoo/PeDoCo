@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PeDoCo>
 
-<text n="1" source="AP0001" type="FIXME" bundle="n" several_wittnesses="n">
+<text n="1" source="AP" onum="1" type="FIXME" bundle="n" several_wittnesses="n">
 <front>
 <docDate><date when="1410-05-28"/></docDate>
 </front><body>
@@ -35,9 +35,10 @@ non obstante.</p>
 </body>
 </text>
 
+
 <text>
-<h2 num="22" bundle="n" several_wittnesses="y">22 <date when="1450-01-15">15.1 1450</date> Rome</h2>
-<h3 num="22" version="a">22a</h3>
+<h2 n="20" source="AP" onum="22" type="FIXME" bundle="n" several_wittnesses="y">22 <date when="1450-01-15">15.1 1450</date> Rome</h2>
+<h3 onum="22" version="a">22a</h3>
 <version>
 Exponitur pro parte Nannonis dictus Kerling Scharensis diocesis, quod 
 parentes eius ad monasterium sancti Bernardi in Varneens ordinis
@@ -63,7 +64,7 @@ etc. declarare dignemini ut in forma. Fiat ut infra. Dominicus
 sancte Crucis. Signetur per “Fiat”, si est ita et si nondum per annum
 permanens saltem tacite professus fuit. Berardus Spoletanus.
 </version>
-<h3 num="22" version="b">22b</h3>
+<h3 onum="22" version="b">22b</h3>
 <version>
 Venerabili in Christo patri Dei gratia episcopo Wexionensi vel eius
 vicario in spiritualibus Dominicus miseratione divina tituli sancte Crucis
