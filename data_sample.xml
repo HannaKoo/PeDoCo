@@ -36,10 +36,9 @@ non obstante.</p>
 </text>
 
 
-<text>
-<h2 n="20" source="AP" onum="22" type="FIXME" bundle="n" several_wittnesses="y">22 <date when="1450-01-15">15.1 1450</date> Rome</h2>
-<h3 onum="22" version="a">22a</h3>
-<version>
+<text n="20" source="AP" onum="22" type="FIXME" bundle="n" several_wittnesses="y">22 
+<docDate><date when="1450-01-15"/><placeName type="place-issue">Rome</placeName></docDate>
+<version onum="22" version="a">
 Exponitur pro parte Nannonis dictus Kerling Scharensis diocesis, quod 
 parentes eius ad monasterium sancti Bernardi in Varneens ordinis
 Cisterciensis <add>Scarensis</add> diocesis accesserint et supplicassent abbatem
@@ -64,8 +63,7 @@ etc. declarare dignemini ut in forma. Fiat ut infra. Dominicus
 sancte Crucis. Signetur per “Fiat”, si est ita et si nondum per annum
 permanens saltem tacite professus fuit. Berardus Spoletanus.
 </version>
-<h3 onum="22" version="b">22b</h3>
-<version>
+<version onum="22" version="b">
 Venerabili in Christo patri Dei gratia episcopo Wexionensi vel eius
 vicario in spiritualibus Dominicus miseratione divina tituli sancte Crucis
 in Ierusalem presbyter cardinalis salutem et sinceram in Domino
