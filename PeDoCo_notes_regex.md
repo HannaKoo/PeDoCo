@@ -804,10 +804,11 @@ and
 - [ ] Add PeDoCo numbering:
   - I Auctoritate
     - Just replicate auctoritate numbering? 1–453
-    - versions (a/b)?
-    - bundles?
+      - No, number `<text>`'s continuously (`n="20"`), also keep auctoritate numbering (`onum="22"`)
+    - versions (a/b)? `<version onum="22" version="a">`
+    - bundles? `<div` ?
   - II England/Wales
-    - numbers: 454–nn ?
+    - numbers: 396–nnnn ?
   - III Norway 
     - numbers:
 
