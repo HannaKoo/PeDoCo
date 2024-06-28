@@ -36,10 +36,10 @@ non obstante.</p>
 </text>
 
 
-<text n="20" source="AP" onum="22" type="FIXME" bundle="n" several_wittnesses="y">22 
+<text n="20" source="AP" onum="22" type="FIXME" bundle="n" several_wittnesses="y">
 <docDate><date when="1450-01-15"/><placeName type="place-issue">Rome</placeName></docDate>
 <version onum="22" version="a">
-Exponitur pro parte Nannonis dictus Kerling Scharensis diocesis, quod 
+<p>Exponitur pro parte Nannonis dictus Kerling Scharensis diocesis, quod 
 parentes eius ad monasterium sancti Bernardi in Varneens ordinis
 Cisterciensis <add>Scarensis</add> diocesis accesserint et supplicassent abbatem
 et monachos, ut <add>eum</add> reciperent in monasterium, et, quod ipsum
@@ -61,10 +61,10 @@ sancte! Cum nullam professionem fecit etc., ad obstruenda etc. <i>supplicatur</i
 quatenus <i>ipsum </i>dicto monasterio in nullo obligari, in seculo remanere 
 etc. declarare dignemini ut in forma. Fiat ut infra. Dominicus
 sancte Crucis. Signetur per “Fiat”, si est ita et si nondum per annum
-permanens saltem tacite professus fuit. Berardus Spoletanus.
+permanens saltem tacite professus fuit. Berardus Spoletanus.</p>
 </version>
 <version onum="22" version="b">
-Venerabili in Christo patri Dei gratia episcopo Wexionensi vel eius
+<p>Venerabili in Christo patri Dei gratia episcopo Wexionensi vel eius
 vicario in spiritualibus Dominicus miseratione divina tituli sancte Crucis
 in Ierusalem presbyter cardinalis salutem et sinceram in Domino
 caritatem. Ex parte Nannonis dicti Kerling laici Scharensis diocesis
@@ -116,7 +116,7 @@ premissa dictis ordini aut monasterio in nullo obligatum aut astrictum
 fore nec etiam alteri ordini sed ipsum libere et licite in seculo remanere 
 posse premissis non obstantibus. Datum Rome apud Sanctum Petrum,
 sub sigillo officii penitentiarie, xviii Kalendas Februarii, pontificatus
-domini Nicolai pape v anno tertio.
+domini Nicolai pape v anno tertio.</p>
 </version>
 </text>
 
