@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PeDoCo>
 
-<text n="1" source="AP" onum="1" type="FIXME" bundle="n" several_wittnesses="n">
+<text n="1" source="AP" onum="1" type="uberiori" bundle="n" several_wittnesses="n">
 <front>
 <docDate><date when="1410-05-28"/></docDate>
 </front>
 <body>
-<p>Item similem gratiam facientes Laurentio Iohannis de 
+<p><div type="context">Item similem gratiam facientes Laurentio Iohannis de 
 <choice>
     <orig>Scokholmis</orig>
-    <corr resp="editor">Stokholmis</corr>
+    <corr resp="Risberg">Stokholmis</corr>
 </choice> 
 <choice>
     <orig>clericus</orig>
-    <corr resp="editor">clerico</corr>
+    <corr resp="Risberg">clerico</corr>
 </choice> 
 <choice>
     <orig>Opsalensis</orig>
-    <corr resp="editor">Upsalensis</corr>
+    <corr resp="Risberg">Upsalensis</corr>
 </choice>
  diocesis, cum quo alias, ut non obstante defectu
 natalium, quem patitur de presbytero genitus et soluta, ad omnes posset
@@ -28,43 +28,78 @@ caracteri insigniri. Supplicat igitur sanctitati vestre, quatenus sibi gratiam
 facientes uberiorem, ut dicto non obstante ad omnes sacros ordines
 promoveri et unum aliud beneficium ecclesiasticum, etiam si curam
 habeat animarum, <i>obtinere possit, secum dispensare dignemini </i>per omnia 
-ut supra in proxima. Fiat de speciali ad unum aliud et quod semel.</p>
+ut supra in proxima.</div> <div type="escatocol">Fiat de speciali ad unum aliud et quod semel.</div></p>
 </body>
 </text>
 
 
-<text n="13" source="AP" onum="13" to_num="15" type="FIXME" bundle="y" several_wittnesses="n">
+<text n="9" source="AP" onum="9" type="promotis" bundle="n" several_wittnesses="n">
+<front>
+    <docDate><date when="1439-03-05"/></docDate>
+</front>
+<body>
+<p>
+<div type="protocol">Beatissime pater!</div> <div type="context">Exponitur sanctitati vestre pro parte devoti vestri
+Ioseph Arneri, clerici Scarensis diocesis, quod, cum ipse zelo devotionis
+accensus desideret ad omnes ordines promoveri et in eisdem perpetuo
+altissimo Domino celebrando et ministrando famulari, <del>sed</del> quia impedimento,
+quod ipse aliqualiter pollicem manus sinistre habet diminuatum 
+<choice>
+    <orig>e ex</orig>
+    <sic resp="Risberg">e</sic>
+</choice> causa cuiusdam laici, qui cum eo questionem faciebat et cum
+dentibus in parte interiori scindit et mordivit casualiter, licet bene habet
+pollicem cum 
+<choice>
+    <orig>unga</orig>
+    <sic resp="Risberg">ungue</sic>
+</choice>, <del>sed</del> modica difformitas in eo apparet, quapropter
+desiderium huiusmodi in hac parte commode adimplere non
+<add>potest</add>, nisi apostolice sedis suffragetur auxilio. Idcirco supplicat 
+eidem sanctitati vestre idem Ioseph, quatenus, <add>ut</add> predicto impedimento
+non obstante ad dictos ordines promoveri et in eisdem, postquam 
+promotus fuerit, libere recipere et licite ministrare et celebrari
+possit et valeat, secum dispensari mandare dignemini de gratia vestra
+speciali.</div> <div type="escatocol">Concessum de speciali et committatur ordinario in presentia
+domini cardinalis. Petrus.</div></p>
+</body>
+</text>
+    
+
+<text n="13" source="AP" onum="13" to_num="15" type="natalium" bundle="y" several_wittnesses="n">
 <front>
 <docDate><date when="1448-02-04"/><placeName type="place-issue">Rome</placeName></docDate>
 </front>
 <body>
-<div onum="13"><p>Supplicatur sanctitati vestre pro parte devoti vestri Nicolai Laurentii
+<div onum="13"><p><div type="context">Supplicatur sanctitati vestre pro parte devoti vestri Nicolai Laurentii
 clerici Upsalensis diocesis, quatenus non obstante defectu natalium,
 quem patitur de presbytero genitus et soluta, dignetur sanctitati vestri
-ut supra. Fiat de speciali. Dominicus sancte Crucis.</p></div>
-<div onum="14"><p>Similiter dispensatum est 
+ut supra.</div> <div type="escatocol">Fiat de speciali. Dominicus sancte Crucis.</div></p></div>
+<div onum="14"><p><div type="context">Similiter dispensatum est 
 <choice>
     <orig>Eirco</orig>
-    <sic resp="#editor">Erico</sic>
+    <sic resp="Risberg">Erico</sic>
 </choice> Mathie clerico Upsalensis diocesis
-simili defectu non obstante.</p></div>
-<div onum="15"><p>Similiter Iohanni Mathie clerico Upsalensis diocesis simili defectu
-non obstante.</p></div>
+simili defectu non obstante.</div></p></div>
+<div onum="15"><p><div type="context">Similiter Iohanni Mathie clerico Upsalensis diocesis simili defectu
+non obstante.</div></p></div>
 </body>
 </text>
 
 
-<text n="20" source="AP" onum="22" type="FIXME" bundle="n" several_wittnesses="y">
-<docDate><date when="1450-01-15"/><placeName type="place-issue">Rome</placeName></docDate>
-<version onum="22" version="a">
-<p>Exponitur pro parte Nannonis dictus Kerling Scharensis diocesis, quod 
-parentes eius ad monasterium sancti Bernardi in <placeName type="variant" resp="#editor">
+<text n="20" source="AP" onum="22" type="ecclesiae" bundle="n" several_wittnesses="y">
+<front><docDate><date when="1450-01-15"/><placeName type="place-issue">Rome</placeName></docDate></front>
+<body>
+<version onum="22" version=
+"a">
+<p><div type="context">Exponitur pro parte Nannonis dictus Kerling Scharensis diocesis, quod 
+parentes eius ad monasterium sancti Bernardi in <placeName type="variant" resp="Risberg">
     <name type="orig">Varneens</name>
     <name type="reg">Varnhem</name>
 </placeName> ordinis
 Cisterciensis <add>Scarensis</add> diocesis <choice>
     <orig>accesserit</orig>
-    <sic resp="#editor">accesserint</sic>
+    <sic resp="Risberg">accesserint</sic>
 </choice> et supplicassent abbatem
 et monachos, ut <add>eum</add> reciperent in monasterium, et, quod ipsum
 monasterium in elemosinis subvenire vellent, promiserunt. Abbas et 
@@ -83,15 +118,15 @@ aliquas dies bene conversatus fuit. Petita licentia et obtenta ab abbate
 ante annum exivit reversus ad seculum, in quo manere vult. Pater
 sancte! Cum nullam professionem fecit etc., ad obstruenda etc. <i>supplicatur</i>,
 quatenus <i>ipsum </i>dicto monasterio in nullo obligari, in seculo remanere 
-etc. declarare dignemini ut in forma. Fiat ut infra. Dominicus
+etc. declarare dignemini ut in forma.</div> <div type="escatocol">Fiat ut infra. Dominicus
 sancte Crucis. Signetur per “Fiat”, si est ita et si nondum per annum
-permanens saltem tacite professus fuit. Berardus Spoletanus.</p>
+permanens saltem tacite professus fuit. Berardus Spoletanus.</div></p>
 </version>
 <version onum="22" version="b">
-<p>Venerabili in Christo patri Dei gratia episcopo Wexionensi vel eius
+<p><div type="protocol">Venerabili in Christo patri Dei gratia episcopo Wexionensi vel eius
 vicario in spiritualibus Dominicus miseratione divina tituli sancte Crucis
 in Ierusalem presbyter cardinalis salutem et sinceram in Domino
-caritatem. Ex parte Nannonis dicti Kerling laici Scharensis diocesis
+caritatem.</div> <div type="context">Ex parte Nannonis dicti Kerling laici Scharensis diocesis
 nobis oblata petitio continebat, quod, cum olim parentes ipsius exponentis 
 ad monasterium sancti Bernardi in Warneem ordinis cisterciensis
 Scharensis diocesis accesissent ac abbatem et monachos dicti
@@ -138,24 +173,24 @@ per annum permanens saltem tacite professus fuit, super quibus
 vestram conscientiam oneramus, declaretis ipsum exponentem per
 premissa dictis ordini aut monasterio in nullo obligatum aut astrictum
 fore nec etiam alteri ordini sed ipsum libere et licite in seculo remanere 
-posse premissis non obstantibus. Datum Rome apud Sanctum Petrum,
+posse premissis non obstantibus.</div> <div type="escatocol">Datum Rome apud Sanctum Petrum,
 sub sigillo officii penitentiarie, xviii Kalendas Februarii, pontificatus
-domini Nicolai pape v anno tertio.</p>
+domini Nicolai pape v anno tertio.</div></p>
 </version>
+</body>
 </text>
 
 
-<pope>ALEXANDER V (1409–1410) </pope>
-<pb/>
-<type type="natalium"><i>Super defectu natalium in forma ampliori</i></type>
-<jotain><i>Supplicationes signate per dominum meum cardinalem Aniciensem maiorem penitentiarium de mense Aprilis pontificatus domini Alexandri pape V anno primo</i></jotain>
+<head type="natalium"><i>Super defectu natalium in forma ampliori</i></head>
+<head type="sub"><i>Supplicationes signate per dominum meum cardinalem Aniciensem maiorem penitentiarium de mense Aprilis pontificatus domini Alexandri pape V anno primo</i></head>
 
 <text n="396" source="EW" onum="1" type="natalium" pope="Alexander V">
 <front>
 <docDate><date when="1410-04-08"/><placeName type="place-issue">Bologna</placeName></docDate>
-</front><body>
-<p>[Bononie], vi idus Aprilis. Supplicatur sanctitati vestre pro parte devoti vestri Thome Cullurdonse, presbiteri, perpetui vicarii parrochialis ecclesie de Diseworch’, Lincolniensis diocesis, cum quo alias ut non obstante defectu natalium quem patitur de soluto genitus et soluta et ad omnes ordines promoveri et beneficium ecclesiasticum etiam si curam habeat animarum [obtinere posset] auctoritate apostolica fuit dispensatum, cuius vigore dispensationis se fecit ad omnes ordines promoveri et dictam parrochialem ecclesiam est assecutus, quatinus sibi uberiorem gratiam facientes ut unum aliud ecclesiasticum beneficium una cum dicta vicaria posset licite retinere, ex causa permutationis vel alias simul vel successive totiens quotiens sibi videbitur dimittere et loco dimissi vel dimissorum aliud vel alia similia [<i>sic</i>] simile vel dissimile aut similia vel dissimilia beneficium seu beneficia, unum vel duo dumtaxat alia beneficia ecclesiastica, etiam si eorum alterum curatum, libere recipere et licite retinere valeat dignemini misericorditer dispensare, Pictavensi consilio non obstante et aliis constitutionibus et statutis etc. in contrarium editis non obstantibus quibuscumque de gratia speciali.</p>
-<p>Fiat de speciali ad unum et quod semel.</p>
+</front>
+<body>
+<p><add>Bononie</add>, vi idus Aprilis. <div type="context">Supplicatur sanctitati vestre pro parte devoti vestri Thome Cullurdonse, presbiteri, perpetui vicarii parrochialis ecclesie de Diseworch’, Lincolniensis diocesis, cum quo alias ut non obstante defectu natalium quem patitur de soluto genitus et soluta et ad omnes ordines promoveri et beneficium ecclesiasticum etiam si curam habeat animarum <add>obtinere posset</add> auctoritate apostolica fuit dispensatum, cuius vigore dispensationis se fecit ad omnes ordines promoveri et dictam parrochialem ecclesiam est assecutus, quatinus sibi uberiorem gratiam facientes ut unum aliud ecclesiasticum beneficium una cum dicta vicaria posset licite retinere, ex causa permutationis vel alias simul vel successive totiens quotiens sibi videbitur dimittere et loco dimissi vel dimissorum aliud vel alia similia <add><i>sic</i></add> simile vel dissimile aut similia vel dissimilia beneficium seu beneficia, unum vel duo dumtaxat alia beneficia ecclesiastica, etiam si eorum alterum curatum, libere recipere et licite retinere valeat dignemini misericorditer dispensare, Pictavensi consilio non obstante et aliis constitutionibus et statutis etc. in contrarium editis non obstantibus quibuscumque de gratia speciali.</div></p>
+<p type="escatocol">Fiat de speciali ad unum et quod semel.</p>
 </body>
 </text>
 

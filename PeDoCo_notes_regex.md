@@ -3259,3 +3259,44 @@ non obstante.</p>
 Get rid of `<lb>`? and the text number `>13<`
 
 Possible TEI tags: div, group, ...?
+
+## 3.7.2024 Protocol, context, escatocol
+
+This is the only google hit:
+
+https://books.google.fi/books?id=wgCKSlhpd90C&lpg=PA119&ots=vuSB66oFDb&dq=tei%20xml%20protocol%20escatocol&hl=fi&pg=PA119#v=onepage&q=tei%20xml%20protocol%20escatocol&f=false
+https://books.google.fi/books?id=wgCKSlhpd90C&pg=PA119&lpg=PA119&dq=tei+xml+protocol+escatocol&source=bl&ots=vuSB66oFDb&sig=ACfU3U3J4xgB3WKI8I3l9GNFcihic0wcAg&hl=fi&sa=X&ved=2ahUKEwiIrei2h4uHAxVxLBAIHWcwC98Q6AF6BAgFEAM#v=onepage&q=tei%20xml%20protocol%20escatocol&f=false
+
+```xml
+<text>
+  <front>
+    <div type="regest" xml:lang="deu">
+      <byline>interpoliert</byline>
+      <p>Patriarch Pilgrim [I.] von Aquileia bestätigt die Übergabe des Eigengutes Oberburg
+        durch den Edlen Diepold von Kager und dessen Frau Truta an die Kirche von Aquileia,
+        dotiert mit einem Teil dieses Besitzes das Benediktinerkloster Oberburg, 
+        ...</p>
+    </div>
+  </front>
+  <body xml:lang="lat">
+    <div type="protocol">
+      <div type="invocatio">In nomine patris et filii et spiritus sancti ...</div>
+      <div type="intilutatio">Idcirco nos Peregrinus dei gratia sancte ...</div>
+      <div type="arenga">Quoniam universis maxime ecclesiarum prelatis in ...</div>
+    </div>
+    <div type="context">
+      <div type="publicatio">notum esse volumus omnibus Christum ...</div>
+      <div type="narratio">qualiter Dyebaldus nobilis quidam de Chagere ...</div>
+      <div type="dispositio">allodium suum Obbemburch sicut et ipsi ...</div>
+      <div type="sanctio">Preterea interdicimus ne aliquis eiusdem ecclesie ...</div>
+    </div>
+    <div type="escatocol">
+      <div type="subscriptiones">Huius igitur donationis testes sunt ...</div>
+      <div type="datatio">Actum est hoc Aquilegie ..</div>
+    </div>
+
+  </body>
+</text>
+
+```
+
