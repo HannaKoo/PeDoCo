@@ -195,14 +195,14 @@ domini Nicolai pape v anno tertio.</div></p>
 </text>
 
 
-<num>15</num><date>1479-01-22</date><archive> P.A. vol. 28, fol. 134v	 					</archive> <header> Rubrica: De diversis </header> 
-<edition>
-Iohannes Iacobi presbiter Nidrosiensis diocesis <add>exponit</add> quatenus ipse causa devotionis sepe missam celebrare desiderat, sed sepe contingit ipsum ad diversas mundi partes declinare, quare huiusmodi desiderium suum adimplere non valeat. Supplicat etc. quatenus sibi constitutionibus et ordinibus provincialibus et synodalibus non obstantibus in quacumque diocesi, ubi ipsum declinare contigerit, missam celebrare possit, misericorditer licentiam impartiri dignemini de gratia speciali.
-Fiat de speciali sine preiudicio, Iul<add>ianus</add>, titularis Sancti Petri ad Vincula.
-Rome apud Sanctum Petrum, xi kal. febr. anno octavo domini Sixti pape iiii.    
-
-
-</edition>
+<text n="xxxx" source="SP" onum="15" type="diversis">
+<front><docDate><date when="1479-01-22"/></docDate></front>
+<body>
+<p type="context">Iohannes Iacobi presbiter Nidrosiensis diocesis <add>exponit</add> quatenus ipse causa devotionis sepe missam celebrare desiderat, sed sepe contingit ipsum ad diversas mundi partes declinare, quare huiusmodi desiderium suum adimplere non valeat. Supplicat etc. quatenus sibi constitutionibus et ordinibus provincialibus et synodalibus non obstantibus in quacumque diocesi, ubi ipsum declinare contigerit, missam celebrare possit, misericorditer licentiam impartiri dignemini de gratia speciali.</p>
+<div type="escatocol"><p>Fiat de speciali sine preiudicio, Iul<add>ianus</add>, titularis Sancti Petri ad Vincula.</p>
+<p><placeName type="place-issue">Rome</placeName> apud Sanctum Petrum, xi kal. febr. anno octavo domini Sixti pape iiii.</p></div>
+</body>
+</text>
 
 
 </PeDoCo>
