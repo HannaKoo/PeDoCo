@@ -4,9 +4,22 @@
 <text n="1" source="AP" onum="1" type="FIXME" bundle="n" several_wittnesses="n">
 <front>
 <docDate><date when="1410-05-28"/></docDate>
-</front><body>
-<p>Item similem gratiam facientes Laurentio Iohannis de Stokholmis
-clerico Opsalensis diocesis, cum quo alias, ut non obstante defectu
+</front>
+<body>
+<p>Item similem gratiam facientes Laurentio Iohannis de 
+<choice>
+    <orig>Scokholmis</orig>
+    <corr resp="editor">Stokholmis</corr>
+</choice> 
+<choice>
+    <orig>clericus</orig>
+    <corr resp="editor">clerico</corr>
+</choice> 
+<choice>
+    <orig>Opsalensis</orig>
+    <corr resp="editor">Upsalensis</corr>
+</choice>
+ diocesis, cum quo alias, ut non obstante defectu
 natalium, quem patitur de presbytero genitus et soluta, ad omnes posset
 minores ordines promoveri et beneficium ecclesiasticum, cui cura non
 imminet animarum,  obtinere, auctoritate ordinaria fuit misericorditer 
@@ -23,12 +36,17 @@ ut supra in proxima. Fiat de speciali ad unum aliud et quod semel.</p>
 <text n="13" source="AP" onum="13" to_num="15" type="FIXME" bundle="y" several_wittnesses="n">
 <front>
 <docDate><date when="1448-02-04"/><placeName type="place-issue">Rome</placeName></docDate>
-</front><body>
+</front>
+<body>
 <div onum="13"><p>Supplicatur sanctitati vestre pro parte devoti vestri Nicolai Laurentii
 clerici Upsalensis diocesis, quatenus non obstante defectu natalium,
 quem patitur de presbytero genitus et soluta, dignetur sanctitati vestri
 ut supra. Fiat de speciali. Dominicus sancte Crucis.</p></div>
-<div onum="14"><p>Similiter dispensatum est Erico Mathie clerico Upsalensis diocesis
+<div onum="14"><p>Similiter dispensatum est 
+<choice>
+    <orig>Eirco</orig>
+    <sic resp="#editor">Erico</sic>
+</choice> Mathie clerico Upsalensis diocesis
 simili defectu non obstante.</p></div>
 <div onum="15"><p>Similiter Iohanni Mathie clerico Upsalensis diocesis simili defectu
 non obstante.</p></div>
@@ -40,8 +58,14 @@ non obstante.</p></div>
 <docDate><date when="1450-01-15"/><placeName type="place-issue">Rome</placeName></docDate>
 <version onum="22" version="a">
 <p>Exponitur pro parte Nannonis dictus Kerling Scharensis diocesis, quod 
-parentes eius ad monasterium sancti Bernardi in Varneens ordinis
-Cisterciensis <add>Scarensis</add> diocesis accesserint et supplicassent abbatem
+parentes eius ad monasterium sancti Bernardi in <placeName type="variant" resp="#editor">
+    <name type="orig">Varneens</name>
+    <name type="reg">Varnhem</name>
+</placeName> ordinis
+Cisterciensis <add>Scarensis</add> diocesis <choice>
+    <orig>accesserit</orig>
+    <sic resp="#editor">accesserint</sic>
+</choice> et supplicassent abbatem
 et monachos, ut <add>eum</add> reciperent in monasterium, et, quod ipsum
 monasterium in elemosinis subvenire vellent, promiserunt. Abbas et 
 monachi ad se ipsum fecerunt vocari interrogantes, utrum vellet recipere
@@ -134,6 +158,8 @@ domini Nicolai pape v anno tertio.</p>
 <p>Fiat de speciali ad unum et quod semel.</p>
 </body>
 </text>
+
+
 
 
 </PeDoCo>
