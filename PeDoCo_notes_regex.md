@@ -26,7 +26,7 @@ Misjonshøgskolens forlag, 2004.
 
 The file is organized by edition, so that first the code and comments are on Swedish data, then Norway and lastly England and Wales. The citations from the editions are subject to copyright law and may not be reproduced without reference to their respective editors, as stated above per edition.
 
-
+This file code is not meant as a publication, but as notes for improving transparancy of the conversion process.
 
 # Notes for making sense of the Auctoritate file when opened in Word
 
