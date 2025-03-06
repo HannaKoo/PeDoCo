@@ -1,4 +1,9 @@
-# PeDoCo
-The data, code and results of the Penitentiary Document Corpus linguistic resource
+# PeDoCo The Penitentiary Document Corpus 
 
-This reposity is meant for improving the tranparancy of the conversion process, the actual language resource will be published upon publication of paper at deleted.com
+The data, code and analysis of the Penitentiary Document Corpus language resource. This reposity is meant for improving the tranparancy of the conversion process.
+
+The PeDoCo language resource will be published end of March 2025 at https://clarino.uib.no/comedi/editor/lb-2024031201 
+
+The paper is available at:
+
+https://journals.uio.no/dhnbpub/article/view/12301
